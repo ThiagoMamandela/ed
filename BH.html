@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Body Educational Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Blue background */
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40; /* Dark teal background */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a, nav button {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            background-color: #00796b; /* Teal button */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover, nav button:hover {
+            background-color: #004d40; /* Dark teal on hover */
+            transform: scale(1.05);
+        }
+
+        nav a:active, nav button:active {
+            transform: scale(0.95);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004d40; /* Dark teal background */
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content h2 {
+            color: #004d40; /* Dark teal color */
+        }
+
+        .content h4 {
+            color: #00796b; /* Teal color */
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00796b; /* Teal button */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004d40; /* Dark teal on hover */
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Human Body Educational Site</h1>
+</header>
+
+<nav>
+    <a href="#members">Body Members</a>
+    <a href="#organs">Organs</a>
+    <a href="#genitals">Genital Organs</a>
+    <a href="#diseases">Diseases</a>
+    <button id="login-btn" class="button">Log-in or Sign-up here!</button>
+    <button id="special-btn" class="button">???</button>
+</nav>
+
+<section id="members">
+    <div class="content">
+        <h2>Body Members</h2>
+        <p>Learn about different body members and their roles.</p>
+        <div class="details">
+            <h4>Arms</h4>
+            <p>The arms are used for manipulation, carrying, and interaction with objects. They consist of the upper arm, forearm, wrist, and hand. The complex structure of bones, muscles, and joints allows for a wide range of movements, from lifting to gripping.</p>
+            <h4>Legs</h4>
+            <p>The legs support the body’s weight and are essential for movement and locomotion. They include the thigh, knee, calf, and foot. The legs work together with the pelvis to provide balance and enable walking, running, and jumping.</p>
+            <h4>Head</h4>
+            <p>The head houses the brain, eyes, ears, nose, and mouth. It is critical for sensory perception and cognitive functions. The brain controls bodily functions and processes sensory information, while the sensory organs provide data about the environment.</p>
+            <h4>Hands</h4>
+            <p>Hands are versatile tools for grasping, manipulating objects, and sensory perception through touch. They are composed of bones, muscles, and tendons that enable intricate movements necessary for tasks such as writing, typing, and playing musical instruments.</p>
+            <h4>Feet</h4>
+            <p>Feet provide balance and support while standing, walking, or running. They include the toes, arch, and heel. The feet absorb the impact of walking and running, support the body’s weight, and maintain posture and balance.</p>
+            <h4>Waist</h4>
+            <p>The waist is the area of the body between the ribs and hips. It is crucial for body movement and posture. The waist supports the trunk and connects the upper body with the lower body, allowing for bending and twisting motions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="organs">
+    <div class="content">
+        <h2>Organs</h2>
+        <p>Explore the vital organs and their functions.</p>
+        <div class="details">
+            <h4>Heart</h4>
+            <p>The heart pumps blood throughout the body, supplying oxygen and nutrients while removing waste products. It is divided into four chambers: two atria and two ventricles. The heart's rhythmic contractions ensure blood circulation and maintain homeostasis.</p>
+            <h4>Skin</h4>
+            <p>The skin protects internal organs, regulates temperature, and facilitates sensation through touch. It is the largest organ of the body and acts as a barrier to pathogens while regulating water loss and producing vitamin D.</p>
+            <h4>Brain</h4>
+            <p>The brain controls thoughts, emotions, and coordination of bodily functions. It is divided into several regions, each responsible for different functions, including sensory processing, motor control, and cognitive activities.</p>
+            <h4>Eyes</h4>
+            <p>The eyes are responsible for vision, allowing us to perceive our surroundings. They convert light into electrical signals that are processed by the brain to create visual images. The eye structure includes the cornea, lens, retina, and optic nerve.</p>
+            <h4>Stomach</h4>
+            <p>The stomach breaks down food through digestion, preparing it for nutrient absorption. It secretes digestive enzymes and acids that help in the chemical breakdown of food, and the stomach's muscular contractions mix and move the food.</p>
+            <h4>Liver</h4>
+            <p>The liver processes nutrients from food, detoxifies harmful substances, and produces important proteins. It plays a key role in metabolism, detoxification, and synthesis of proteins essential for blood clotting and other functions.</p>
+            <h4>Appendix</h4>
+            <p>The appendix is a small organ whose function is not fully understood but is thought to be related to immune response. It is located at the junction of the small and large intestines and may play a role in gut flora maintenance. You can live without the appendix.</p>
+            <h4>Lungs</h4>
+            <p>The lungs facilitate the exchange of oxygen and carbon dioxide during respiration. They are divided into lobes and contain alveoli where gas exchange occurs. The lungs work with the diaphragm and respiratory muscles to ensure efficient breathing.</p>
+            <h4>Kidneys</h4>
+            <p>The kidneys filter blood to remove waste products and regulate fluid balance. They produce urine and help maintain electrolyte balance, blood pressure, and overall homeostasis by filtering and reabsorbing substances.</p>
+            <h4>Prostate</h4>
+            <p>The prostate gland is involved in producing seminal fluid and plays a role in reproductive health. It surrounds the urethra and contributes to the production of semen, which is necessary for the transport of sperm during ejaculation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="genitals">
+    <div class="content">
+        <h2>Genital Organs</h2>
+        <p>Learn about the genital organs and their functions.</p>
+        <div class="details">
+            <h4>Penis</h4>
+            <p>The penis is the male external genital organ involved in sexual intercourse and urination. It consists of the shaft and glans and contains erectile tissue that enables erection. The penis also serves as the conduit for urine and semen.</p>
+            <h4>Testicles</h4>
+            <p>The testicles produce sperm and testosterone. They are located in the scrotum and are essential for male fertility and hormonal balance. The testicles also regulate sperm production through temperature control.</p>
+            <h4>Vagina</h4>
+            <p>The vagina is the female internal genital organ that serves as the birth canal and the conduit for menstrual flow and sexual intercourse. It is a muscular tube that connects the external genitalia to the uterus.</p>
+            <h4>Uterus</h4>
+            <p>The uterus is the female reproductive organ where fertilized eggs implant and develop during pregnancy. It is a muscular organ that undergoes changes during the menstrual cycle and supports fetal development during pregnancy.</p>
+            <h4>Ovaries</h4>
+            <p>The ovaries produce eggs and hormones such as estrogen and progesterone. They are involved in the menstrual cycle and reproductive health. Each ovary contains follicles that release eggs during ovulation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="diseases">
+    <div class="content">
+        <h2>Diseases</h2>
+        <p>Explore common diseases and their impacts on the body.</p>
+        <div class="details">
+            <h4>Diabetes</h4>
+            <p>Diabetes is a chronic condition that affects how the body processes blood sugar (glucose). It can lead to high blood sugar levels and requires management through diet, exercise, and medication.</p>
+            <h4>Hypertension</h4>
+            <p>Hypertension, or high blood pressure, is a condition that can lead to serious health issues such as heart disease and stroke. It requires lifestyle changes and medication to manage blood pressure levels.</p>
+            <h4>Asthma</h4>
+            <p>Asthma is a respiratory condition characterized by airway inflammation and constriction, leading to difficulty breathing. It can be triggered by allergens, exercise, and other factors, and is managed with medication and lifestyle adjustments.</p>
+            <h4>Cancer</h4>
+            <p>Cancer is a group of diseases characterized by uncontrolled cell growth. It can affect various organs and tissues and requires treatment options such as surgery, chemotherapy, and radiation therapy.</p>
+            <h4>Flu</h4>
+            <p>The flu is a contagious respiratory illness caused by influenza viruses. It can cause symptoms such as fever, cough, and body aches and is managed with rest, hydration, and antiviral medications if necessary.</p>
+        </div>
+    </div>
+</section>
+
+<div id="modal-login" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <p>Enter your details to log in.</p>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+</div>
+
+<div id="modal-special" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Special Feature</h2>
+        <p>This section is under development. Stay tuned for exciting features!</p>
+    </div>
+</div>
+
+<footer>
+    <p>Made by: Red Book Imprise</p>
+</footer>
+
+<script>
+    document.getElementById('login-btn').addEventListener('click', function() {
+        document.getElementById('modal-login').style.display = 'flex';
+    });
+
+    document.getElementById('special-btn').addEventListener('click', function() {
+        document.getElementById('modal-special').style.display = 'flex';
+    });
+
+    const closeButtons = document.querySelectorAll('.modal .close');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.closest('.modal').style.display = 'none';
+        });
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
